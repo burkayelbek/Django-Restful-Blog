@@ -1,4 +1,5 @@
 from rest_framework import serializers
+# rom rest_framework.serializers import ModelSerializer
 from post.models import Post
 
 

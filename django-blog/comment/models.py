@@ -32,4 +32,3 @@ class Comment(models.Model):
     @property
     def any_children(self):
         return Comment.objects.filter(parent=self).exists()
-

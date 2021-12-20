@@ -35,8 +35,8 @@ class PostCommentSerializer(ModelSerializer):
 class CommentListSerializer(ModelSerializer):
     # related_name = 'replies' olduğu için parent altında olan child'ları görmek için yaptık.
     replies = SerializerMethodField()
-    user = UserSerializer()
-    post = PostCommentSerializer()
+    user = UserSerializer() # User'a ait bilgileri UserSerializer'de verildiği gibi getirir.
+    post = PostCommentSerializer() # Posta ait bilgileri PostCommentSerializer'e göre getirir.
 
     class Meta:
         model = Comment

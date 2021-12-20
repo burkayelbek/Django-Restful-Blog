@@ -1,7 +1,7 @@
 from django.urls import path
 from post.api.views import (PostListApiView,
                             PostDetailAPIView,
-                            PostDeleteApiView,
+                            #PostDeleteApiView,
                             PostUpdateApiView,
                             PostCreateApiView,)
 

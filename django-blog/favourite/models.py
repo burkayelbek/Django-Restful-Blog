@@ -7,3 +7,6 @@ class Favourite(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE, default=1)
     post = models.ForeignKey(Post, on_delete=models.CASCADE, default=1)
     content = models.TextField()
+
+    def __str__(self):
+        return self.user.username

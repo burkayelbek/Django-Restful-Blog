@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': [
         'rest_framework_simplejwt.authentication.JWTAuthentication',
+        'rest_framework.authentication.SessionAuthentication' # Authentication credentials were not provided veriyor localde.
     ],
 }
 SIMPLE_JWT = {
@@ -49,7 +50,8 @@ INSTALLED_APPS = [
     'rest_framework',
     'post',
     'comment',
-    'favourite'
+    'favourite',
+    'account'
 ]
 
 MIDDLEWARE = [

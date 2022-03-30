@@ -9,6 +9,7 @@ from rest_framework.mixins import CreateModelMixin, DestroyModelMixin
 
 from post.api.pagination import PostPagination
 from post.api.serializers import PostSerializer, PostUpdateCreateSerializer
+# from post.api.throttles import RegisterThrottle
 from post.models import Post
 from rest_framework.permissions import (IsAuthenticated, IsAdminUser)
 from post.api.permissions import IsOwnerOrAdmin
@@ -37,6 +38,8 @@ from post.api.permissions import IsOwnerOrAdmin
 
 class PostListApiView(ListAPIView):
     # queryset = Post.objects.all()
+    # throttle_classes = [RegisterThrottle],
+    throttle_scope = 'testScopedThrottle'
     serializer_class = PostSerializer
     pagination_class = PostPagination
     filter_backends = [SearchFilter, OrderingFilter]

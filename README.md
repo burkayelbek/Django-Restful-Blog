@@ -6,14 +6,7 @@
 <h3><u>Requirements for this project</u></h3>
 <ul>
     <li>Create Virtual Enviroment -> <b>virtualenv -p python3 venv</b></li>
-    <li>Install Django -> <b>pip install django</b></li>
-    <li>Install Pillow -> <b>pip install pillow</b></li>
-    <li>Install python rest framework libraries</li>
-    <ol>
-        <li><b>pip install djangorestframework</b></li>
-        <li><b>pip install markdown</b> # Markdown support for the browsable API.</li>
-        <li><b>pip install django-filter</b>  # Filtering support</li>
-    </ol>
+    <li>Install Requirements -> <b>pip install -r requirements.txt</b></li>
 </ul>
 Then, run the below command on shell:<br>
 

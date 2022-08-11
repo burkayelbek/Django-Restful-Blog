@@ -1,6 +1,6 @@
 <h1><u>Django Restful Blog</u></h1>
 
-<i> - This project created for udemy courses for learning python django rest framework.</i>
+<i> - This project created for udemy courses for learning python Django Rest Framework.</i>
 
 
 <h3><u>Requirements for this project</u></h3>
